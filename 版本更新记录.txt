@@ -1,0 +1,14 @@
+2015.4.20 yw
+
+1 修改了homeActivity中的onCreateContextMenu方法，加入了对话框提示，实现了从控件中删除条目，删除文件夹的功能。
+2 在DBManager中增加了deleteItem(参数是条目名）deleteFile(参数是文件名)两个方法。 
+
+2015 4.25 yw
+为了实现修改文件夹名功能:
+1 新增了FileEditActivity类，并写了相关方法，（相关布局文件为activity_file_edit.xml）
+2 在homeActivity中加入了修改文件夹按钮，并在适当位置添加了声明，获取，bundle，以及设置了相关点击事件。
+3 在dbmannger中添加了updateFileName方法
+
+为了实现搜索功能:
+1 在HomeAcitivit中增加两个控件searchview和listview
+2 写了seaerchview对应的方法，实现搜索功能
