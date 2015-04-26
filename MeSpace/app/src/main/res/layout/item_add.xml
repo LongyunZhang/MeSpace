@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--导航条-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <!--返回按钮-->
+        <ImageView
+            android:id="@+id/backBtn_item_add"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+        <!--确定按钮-->
+        <ImageView
+            android:id="@+id/addBtn_item_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/commit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--条目名称-->
+        <TextView
+            android:id="@+id/tmmc_item_add"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="条目名称：" />
+
+        <EditText
+            android:id="@+id/itemName_item_add"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_alignTop="@id/tmmc_item_add"
+            android:maxLength="15"
+            android:singleLine="true"
+            />
+
+        <!--用户名-->
+        <TextView
+            android:id="@+id/yhm_item_add"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="用  户  名：" />
+
+        <EditText
+            android:id="@+id/username_item_add"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_alignTop="@id/yhm_item_add"
+            android:maxLength="15"
+            android:singleLine="true"
+            />
+
+        <!--密码-->
+        <TextView
+            android:id="@+id/mm_item_add"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="密        码：" />
+
+        <EditText
+            android:id="@+id/password_item_add"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_alignTop="@id/mm_item_add"
+            android:maxLength="15"
+            android:singleLine="true"
+            />
+
+        <!--文件夹-->
+        <TextView
+            android:id="@+id/wjj_item_add"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="文 件 夹：" />
+
+        <EditText
+            android:id="@+id/filename_item_add"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_alignTop="@id/wjj_item_add"
+            android:maxLength="15"
+            android:singleLine="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
